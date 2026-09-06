@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#0f1629" />
+    
+    <!-- SEO Meta Tags -->
+    <title>InvoiceCraft - Professional Invoice Generator</title>
+    <meta name="description" content="Create professional invoices in seconds with DP Invoice Generator. Free invoice generator with real-time calculations, multi-currency support, PDF export, and customizable templates." />
+    <meta name="keywords" content="invoice generator, free invoice maker, professional invoices, PDF invoice, billing software, invoice template" />
+    <meta name="author" content="InvoiceCraft" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://invoicepro.app/" />
+    <meta property="og:title" content="DP Invoice Generator - Professional Invoice Generator" />
+    <meta property="og:description" content="Create professional invoices in seconds. Free invoice generator with PDF export and customizable templates." />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://invoicepro.app/" />
+    <meta name="twitter:title" content="DP Invoice Generator - Professional Invoice Generator" />
+    <meta name="twitter:description" content="Create professional invoices in seconds. Free invoice generator with PDF export and customizable templates." />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://invoicepro.app/" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "InvoiceCraft",
+      "description": "Professional invoice generator with real-time calculations, multi-currency support, and PDF export.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Real-time calculations",
+        "Multi-currency support",
+        "PDF export",
+        "Customizable templates",
+        "Auto-save drafts"
+      ]
+    }
+    </script>
+
+  </head>
+  <body>
+    <script>
+      (function() {
+        function setDarkMode(isDark) {
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        }
+        
+        const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+        setDarkMode(matcher.matches);
+        
+        matcher.addEventListener('change', (e) => setDarkMode(e.matches));
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Default Statcounter code for nr invoice
+    https://invoice-generator-one-plum.vercel.app -->
+    <script type="text/javascript">
+    var sc_project=13193559; 
+    var sc_invisible=1; 
+    var sc_security="b4a6150e"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics
+    Made Easy - Statcounter" href="https://statcounter.com/"
+    target="_blank"><img class="statcounter"
+    src="https://c.statcounter.com/13193559/0/b4a6150e/1/"
+    alt="Web Analytics Made Easy - Statcounter"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+  </body>
+</html>
