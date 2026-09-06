@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# InvoiceCraft - Modern Invoice Generator
 
-## Project info
+A fast, intuitive, and privacy-focused invoice generator web application designed for freelancers, contractors, and small businesses. Create professional invoices in seconds with real-time preview, customizable templates, multi-currency support, and instant PDF download — all directly in your browser without requiring a backend.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **Instant Invoice Creation**: Effortlessly create, edit, and format professional invoices with live preview.
+- **Customizable Templates**: Choose from modern, classic, bold, and minimal invoice layouts.
+- **Branding & Styling**: Add your company logo, custom brand colors, and personal signature.
+- **Smart Financials**: Automatic calculation of subtotals, configurable taxes, and fixed or percentage-based discounts.
+- **Multi-Currency Support**: Native support for USD, EUR, GBP, INR, JPY, CAD, AUD, CHF, and more.
+- **Client & Line Item Management**: Easily add clients, payment instructions, QR codes, and unlimited itemized lines.
+- **Export to PDF**: Generate high-resolution, print-ready PDF invoices with one click.
+- **100% Client-Side Privacy**: Your business and customer data stays safely in your browser.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Framework**: React 18 with TypeScript
+- **Bundler & Dev Server**: Vite
+- **Styling**: Tailwind CSS & shadcn/ui
+- **Icons**: Lucide React
+- **PDF Generation**: jsPDF & html2canvas
+- **State & Forms**: React Hook Form & Zod
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 💻 How to Run the Project
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Follow these steps to set up and run the project locally on your machine.
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Ensure you have the following installed on your system:
+- **Node.js** (v18.0.0 or higher recommended): [Download Node.js](https://nodejs.org/)
+- **npm** (comes bundled with Node.js) or **Bun** / **pnpm** / **yarn**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation & Setup
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Sigmaboy69/invoice-generator-new.git
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. **Navigate into the project directory:**
+   ```bash
+   cd invoice-generator-new
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the application:**
+   Visit `http://localhost:5173` (or the URL displayed in your terminal) in your browser.
+
+---
+
+## 📦 Build for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+To preview the production build locally:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```bash
+npm run preview
+```
