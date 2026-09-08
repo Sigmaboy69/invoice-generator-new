@@ -43,7 +43,7 @@ export const BasicTemplate = ({
 
         <div className="text-right">
            {invoice.companyLogo ? (
-             <img src={invoice.companyLogo} alt="Logo" className="h-16 w-auto object-contain grayscale mb-3 ml-auto" />
+             <img src={invoice.companyLogo} alt="Logo" className="h-16 w-auto object-contain mb-3 ml-auto" crossOrigin="anonymous" />
            ) : (
              <div className="h-12 w-12 border-2 border-gray-900 flex items-center justify-center mb-3 ml-auto">
                <span className="font-bold text-2xl">{(invoice.companyName || 'B')[0]}</span>
@@ -178,7 +178,7 @@ export const BasicTemplate = ({
         {invoice.showSignature && (
           <div className="text-center group min-w-[200px]">
             {invoice.signatureImage ? (
-              <img src={invoice.signatureImage} alt="Signature" className="h-16 object-contain mx-auto mb-2 grayscale" />
+              <img src={invoice.signatureImage} alt="Signature" className="h-16 object-contain mx-auto mb-2" crossOrigin="anonymous" />
             ) : (
               <div className="h-16 w-40 mb-2 border-b-2 border-gray-200"></div>
             )}

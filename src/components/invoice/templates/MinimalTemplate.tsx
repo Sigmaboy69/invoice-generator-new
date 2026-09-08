@@ -14,7 +14,7 @@ export const MinimalTemplate = ({ invoice, formatCurrency, formatDate }: Minimal
       <div className="flex justify-between items-start mb-12">
         <div className="flex items-center gap-4">
           {invoice.companyLogo ? (
-            <img src={invoice.companyLogo} alt="Logo" className="h-16 w-16 object-contain border border-gray-100" />
+            <img src={invoice.companyLogo} alt="Logo" className="h-16 w-16 object-contain border border-gray-100" crossOrigin="anonymous" />
           ) : (
             <div className="h-16 w-16 flex items-center justify-center" style={{ backgroundColor: invoice.brandColor }}>
               <span className="text-white font-bold text-2xl">{(invoice.companyName || 'C')[0]}</span>
@@ -174,7 +174,7 @@ export const MinimalTemplate = ({ invoice, formatCurrency, formatDate }: Minimal
         <div className="mt-8 flex justify-end">
           <div className="text-center">
             {invoice.signatureImage ? (
-              <img src={invoice.signatureImage} alt="Signature" className="h-12 object-contain mx-auto mb-1" />
+              <img src={invoice.signatureImage} alt="Signature" className="h-12 object-contain mx-auto mb-1" crossOrigin="anonymous" />
             ) : (
               <div className="w-40 border-b border-gray-300 mb-1"></div>
             )}

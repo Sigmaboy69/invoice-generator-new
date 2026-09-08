@@ -63,7 +63,7 @@ export const EliteTemplate = ({ invoice, formatCurrency, formatDate }: EliteTemp
           <div className="flex flex-col items-center pt-2">
             <div className="mb-4">
               {invoice.companyLogo ? (
-                <img src={invoice.companyLogo} alt="Logo" className="h-20 w-auto object-contain" />
+                <img src={invoice.companyLogo} alt="Logo" className="h-20 w-auto object-contain" crossOrigin="anonymous" />
               ) : (
                 <div className="relative w-[86px] h-[100px] flex items-center justify-center">
                   <svg width="86" height="100" viewBox="0 0 80 92" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +193,7 @@ export const EliteTemplate = ({ invoice, formatCurrency, formatDate }: EliteTemp
           {invoice.showSignature && (
             <div className="w-52 border-t-[1.5px] border-gray-400 pt-3 text-center">
               {invoice.signatureImage ? (
-                <img src={invoice.signatureImage} alt="Signature" className="h-12 object-contain mx-auto mb-2" />
+                <img src={invoice.signatureImage} alt="Signature" className="h-12 object-contain mx-auto mb-2" crossOrigin="anonymous" />
               ) : (
                 <div className="h-12"></div>
               )}

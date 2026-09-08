@@ -1,4 +1,4 @@
-﻿import { FileText, Plus, Moon, Sun, Download, RotateCcw } from 'lucide-react';
+import { FileText, Plus, Moon, Sun, Download, RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
 interface HeaderProps {
@@ -36,13 +36,13 @@ export const Header = ({
   };
   return <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl safe-area-top">
     <div className="container mx-auto flex h-14 sm:h-16 items-center justify-between px-3 sm:px-4">
-      <div className="flex items-center gap-2 sm:gap-3">
-        <img src="/logo.png" alt="Logo" className="h-8 w-auto sm:h-10 object-contain" />
+      <a href="/" className="flex items-center gap-2 sm:gap-3 transition-opacity hover:opacity-80">
+        <img src="/logo.png" alt="InvoiceCraft Logo" className="h-8 w-auto sm:h-10 object-contain" />
         <div>
           <div className="text-base sm:text-lg font-bold tracking-tight">InvoiceCraft</div>
           <p className="hidden sm:block text-xs text-muted-foreground">Free Professional Invoice Generator</p>
         </div>
-      </div>
+      </a>
 
       <div className="flex items-center gap-1.5 sm:gap-3">
         {/* Save status - hidden on mobile, shown in bottom bar */}

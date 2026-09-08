@@ -17,7 +17,7 @@ export const ClassicTemplate = ({ invoice, formatCurrency, formatDate }: Classic
         {/* Company Info (Left) */}
         <div className="flex flex-col gap-4 max-w-[50%]">
           {invoice.companyLogo ? (
-            <img src={invoice.companyLogo} alt="Logo" className="h-20 w-auto object-contain self-start" />
+            <img src={invoice.companyLogo} alt="Logo" className="h-20 w-auto object-contain self-start" crossOrigin="anonymous" />
           ) : (
             <div className="h-16 w-16 bg-gray-900 text-white flex items-center justify-center rounded-sm">
               <span className="font-bold text-3xl font-sans">{(invoice.companyName || 'C')[0]}</span>
@@ -205,7 +205,7 @@ export const ClassicTemplate = ({ invoice, formatCurrency, formatDate }: Classic
           {invoice.showSignature && (
             <div className="text-center pr-8">
               {invoice.signatureImage ? (
-                <img src={invoice.signatureImage} alt="Signature" className="h-16 w-auto object-contain mx-auto mb-2" />
+                <img src={invoice.signatureImage} alt="Signature" className="h-16 w-auto object-contain mx-auto mb-2" crossOrigin="anonymous" />
               ) : (
                 <div className="h-12 w-48 mb-2"></div>
               )}

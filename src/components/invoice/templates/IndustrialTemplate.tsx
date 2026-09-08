@@ -25,7 +25,9 @@ export const IndustrialTemplate = ({
         <div className="w-[45%] flex flex-col justify-between p-10 text-white" style={{ backgroundColor: brandColor }}>
           <div className="flex items-center gap-3">
              {invoice.companyLogo ? (
-                <img src={invoice.companyLogo} alt="Logo" className="h-12 w-auto brightness-0 invert" />
+                <div className="bg-white/10 backdrop-blur-sm p-1.5 rounded-lg inline-block">
+                  <img src={invoice.companyLogo} alt="Logo" className="h-12 w-auto object-contain" crossOrigin="anonymous" />
+                </div>
              ) : (
                 <div className="h-10 w-10 border-4 border-white flex items-center justify-center">
                    <span className="font-black text-xl">{(invoice.companyName || 'I')[0]}</span>
@@ -201,7 +203,7 @@ export const IndustrialTemplate = ({
         {invoice.showSignature && (
           <div className="text-center group border-2 border-gray-900 p-4 min-w-[200px]">
             {invoice.signatureImage ? (
-              <img src={invoice.signatureImage} alt="Signature" className="h-16 object-contain mx-auto mb-2" />
+              <img src={invoice.signatureImage} alt="Signature" className="h-16 object-contain mx-auto mb-2" crossOrigin="anonymous" />
             ) : (
               <div className="h-16 w-32 mb-2"></div>
             )}

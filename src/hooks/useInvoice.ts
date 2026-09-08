@@ -4,6 +4,8 @@ import { InvoiceData, LineItem, Currency, TemplateType, createEmptyInvoice, Paym
 const STORAGE_KEY = 'invoice_draft';
 const AUTOSAVE_INTERVAL = 30000;
 
+const VALID_TEMPLATES: TemplateType[] = ['bold', 'classic', 'modern', 'minimal', 'industrial', 'indigo', 'basic', 'elite'];
+
 export const useInvoice = () => {
   const [invoice, setInvoice] = useState<InvoiceData>(() => {
     // Check for template param in URL
@@ -27,8 +29,8 @@ export const useInvoice = () => {
           },
         };
 
-        // If template param exists, override the saved template
-        if (templateParam && ['bold', 'classic', 'modern', 'minimal'].includes(templateParam)) {
+        // If template param exists and is valid, override the saved template
+        if (templateParam && VALID_TEMPLATES.includes(templateParam)) {
           return {
             ...baseInvoice,
             template: templateParam
@@ -43,7 +45,7 @@ export const useInvoice = () => {
 
     // Create new invoice with optional template param
     const newInvoice = createEmptyInvoice();
-    if (templateParam && ['bold', 'classic', 'modern', 'minimal'].includes(templateParam)) {
+    if (templateParam && VALID_TEMPLATES.includes(templateParam)) {
       newInvoice.template = templateParam;
     }
     return newInvoice;

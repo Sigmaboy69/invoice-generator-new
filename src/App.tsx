@@ -13,6 +13,7 @@ const Guide = lazy(() => import('./pages/Guide'));
 const HowToCreateGSTInvoice = lazy(() => import('./pages/blog/HowToCreateGSTInvoice'));
 const BestFreeInvoiceGenerator = lazy(() => import('./pages/blog/BestFreeInvoiceGenerator'));
 const InvoiceFormat = lazy(() => import('./pages/blog/InvoiceFormat'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
               <Route path="/how-to-create-gst-invoice-india" element={<HowToCreateGSTInvoice />} />
               <Route path="/best-free-invoice-generator-india" element={<BestFreeInvoiceGenerator />} />
               <Route path="/invoice-format-for-small-business" element={<InvoiceFormat />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </HashRouter>
