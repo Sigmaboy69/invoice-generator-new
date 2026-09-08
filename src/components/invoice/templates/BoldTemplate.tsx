@@ -59,7 +59,7 @@ export const BoldTemplate = ({
           <div className="text-right text-white pt-2">
             {invoice.companyLogo ? (
               <div className="bg-white p-2 rounded-lg inline-block mb-3 shadow-md">
-                <img src={invoice.companyLogo} alt="Logo" className="h-16 w-auto object-contain" />
+                <img src={invoice.companyLogo} alt="Logo" className="h-16 w-auto object-contain" crossOrigin="anonymous" />
               </div>
             ) : (
               <div className="flex items-center justify-end gap-3 mb-3">
@@ -196,7 +196,7 @@ export const BoldTemplate = ({
         <div className="px-12 mt-12 flex justify-end">
           <div className="text-center group">
             {invoice.signatureImage ? (
-              <img src={invoice.signatureImage} alt="Signature" className="h-20 object-contain mx-auto mb-2 transition-transform group-hover:scale-110" />
+              <img src={invoice.signatureImage} alt="Signature" className="h-20 object-contain mx-auto mb-2 transition-transform group-hover:scale-110" crossOrigin="anonymous" />
             ) : (
               <div className="h-16 w-48 mb-2 flex items-end justify-center">
                   <div className="w-full h-px bg-gray-300"></div>

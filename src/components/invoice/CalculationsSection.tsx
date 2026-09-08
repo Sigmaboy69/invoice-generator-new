@@ -111,7 +111,7 @@ export const CalculationsSection = ({ invoice, onUpdate, onSetCurrency }: Calcul
             <label className="mb-2 block text-sm font-medium text-muted-foreground">Rounding</label>
             <Select
               value={invoice.rounding || 'none'}
-              onValueChange={(value: any) => onUpdate('rounding', value)}
+              onValueChange={(value: 'none' | 'up' | 'down') => onUpdate('rounding', value)}
             >
               <SelectTrigger className="h-11 sm:h-10">
                 <SelectValue />

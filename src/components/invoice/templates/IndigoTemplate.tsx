@@ -35,7 +35,7 @@ export const IndigoTemplate = ({
         <div className="flex justify-between items-start mb-20">
           <div className="flex items-center gap-6">
             {invoice.companyLogo ? (
-              <img src={invoice.companyLogo} alt="Logo" className="h-16 w-auto object-contain rounded-xl shadow-lg border border-gray-50" />
+              <img src={invoice.companyLogo} alt="Logo" className="h-16 w-auto object-contain rounded-xl shadow-lg border border-gray-50" crossOrigin="anonymous" />
             ) : (
               <div className="h-16 w-16 flex items-center justify-center rounded-2xl shadow-xl border-t border-white/50" style={{ backgroundColor: brandColor }}>
                 <span className="text-white font-black text-3xl">{(invoice.companyName || 'I')[0]}</span>
@@ -195,7 +195,7 @@ export const IndigoTemplate = ({
           {invoice.showSignature && (
             <div className="text-center group p-6 rounded-3xl bg-gray-50 border border-gray-100 min-w-[200px]">
               {invoice.signatureImage ? (
-                <img src={invoice.signatureImage} alt="Signature" className="h-16 object-contain mx-auto mb-2" />
+                <img src={invoice.signatureImage} alt="Signature" className="h-16 object-contain mx-auto mb-2" crossOrigin="anonymous" />
               ) : (
                 <div className="h-16 w-32 mb-2"></div>
               )}
